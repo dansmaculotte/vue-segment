@@ -19,11 +19,38 @@ import Vue from 'vue'
 import Segment from '@dansmaculotte/vue-segment'
 
 Vue.use(Segment, {
-  key: 'YOUR_SEGMENT_WRITE_KEY'
+  writekey: 'YOUR_SEGMENT_WRITE_KEY',
+  disabled: true,
+  settings: {
+    ...
+  }
 })
 ```
 
 ## Usage
+
+See [Segment Vue Quickstart Guide](https://github.com/segmentio/analytics-vue#how-to-get-started).
+
+## Options
+
+### writeKey
+
+- Type: `String`
+  - Default: `''`
+
+### disabled
+
+Disable automatic script loading, if you need compliance with GDPR.
+
+- Type: `Boolean`
+  - Default: `false`
+
+### settings
+
+See [Load options](https://segment.com/docs/sources/website/analytics.js/#load-options) reference.
+
+- Type: `Object`,
+  - Default: `{}`
 
 ## Development
 
