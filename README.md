@@ -21,6 +21,7 @@ import Segment from '@dansmaculotte/vue-segment'
 Vue.use(Segment, {
   writekey: 'YOUR_SEGMENT_WRITE_KEY',
   disabled: true,
+  router,
   settings: {
     ...
   }
@@ -45,12 +46,17 @@ Disable automatic script loading, if you need compliance with GDPR.
 - Type: `Boolean`
   - Default: `false`
 
+### router
+
+Call `analytics.page` method on `afterEach` router method if provided. 
+
+- Type: `Object`
+
 ### settings
 
 See [Load options](https://segment.com/docs/sources/website/analytics.js/#load-options) reference.
 
-- Type: `Object`,
-  - Default: `{}`
+- Type: `Object`
 
 ## Development
 

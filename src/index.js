@@ -71,6 +71,15 @@ module.exports = {
       analytics.load(options.writekey, options.settings)
     }
 
+    if (config.router) {
+      config.router.afterEach((to, from) => {
+        analytics.page(config.pageCategory, to.name || '', {
+          path: to.fullPath,
+          referrer: from.fullPath
+        })
+      })
+    }
+
     Object.defineProperty(Vue, '$segment', {
       get () { return window.analytics }
     })
