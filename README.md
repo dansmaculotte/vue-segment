@@ -1,32 +1,49 @@
-<p align="center">
- <a href="https://www.npmjs.com/package/vue-segment-analytics">
-  <img src="https://img.shields.io/npm/dm/vue-segment-analytics.svg" />
- <a/>
-</p>
+# vue-segment
 
-# vue-segment-analytics
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Dependencies][david-dm-src]][david-dm-href]
+[![Standard JS][standard-js-src]][standard-js-href]
 
-Vue plugin for Segment.io Analytics
+> Vue.js plugin for Segment Analytics.js
 
-## Requirements
+[Segment Analytics.js Documentation](https://segment.com/docs/sources/website/analytics.js/)
 
-Vue ^2.0.0
+## Setup
 
-## TL;DR
-
-```bash
-npm install --save-dev vue-segment-analytics
-```
+1. Add the `@dansmaculotte/vue-segment` dependency with `yarn` or `npm` to your project
+2. Configure it:
 
 ```js
 import Vue from 'vue'
-import VueSegmentAnalytics from 'vue-segment-analytics'
+import Segment from '@dansmaculotte/vue-segment'
 
-Vue.use(VueSegmentAnalytics, {
-  id: 'XXXXX',
-  router // Optional
+Vue.use(Segment, {
+  key: 'YOUR_SEGMENT_WRITE_KEY'
 })
 ```
 
-## 🚀 Segment Vue Quickstart
-Interested in writing analytics code once? With Segment, you can collect customer data from any source (web, mobile, server, CRM, etc.) and send it to over 250+ destinations (Google Analytics, Amplitude, Mixpanel, etc.) via the Segment dashboard. Follow the [tailored guide for Vue](https://github.com/segmentio/analytics-vue) to get setup.
+## Usage
+
+## Development
+
+1. Clone this repository
+2. Install dependencies using `yarn install` or `npm install`
+3. Start development server using `npm run dev`
+
+## License
+
+[MIT License](./LICENSE.md)
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/dt/@dansmaculotte/vue-segment.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@dansmaculotte/vue-segment
+
+[npm-downloads-src]: https://img.shields.io/npm/v/@dansmaculotte/vue-segment/latest.svg?style=flat-square
+[npm-downloads-href]: https://npmjs.com/package/@dansmaculotte/vue-segment
+
+[david-dm-src]: https://david-dm.org/dansmaculotte/vue-segment/status.svg?style=flat-square
+[david-dm-href]: https://david-dm.org/dansmaculotte/vue-segment
+
+[standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
+[standard-js-href]: https://standardjs.com
