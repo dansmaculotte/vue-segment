@@ -71,8 +71,8 @@ module.exports = {
       analytics.load(options.writeKey, options.settings)
     }
 
-    if (config.router) {
-      config.router.afterEach((to, from) => {
+    if (options.router) {
+      options.router.afterEach((to, from) => {
         analytics.page(config.pageCategory, to.name || '', {
           path: to.fullPath,
           referrer: from.fullPath
