@@ -1,6 +1,6 @@
 {
   "name": "@dansmaculotte/vue-segment",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Vue.js plugin for Segment Analytics.js",
   "license": "MIT",
   "main": "src/index.js",
