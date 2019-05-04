@@ -1,6 +1,6 @@
 module.exports = {
   install: function (Vue, options) {
-    if (!options.writekey || options.writekey.length === 0) {
+    if (!options.writeKey || options.writeKey.length === 0) {
       console.warn('Please enter a Segment Write Key')
       return
     }
@@ -68,7 +68,7 @@ module.exports = {
     }
 
     if (!options.disabled) {
-      analytics.load(options.writekey, options.settings)
+      analytics.load(options.writeKey, options.settings)
     }
 
     if (config.router) {
