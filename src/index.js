@@ -39,8 +39,8 @@ module.exports = {
       'on'
     ];
 
-    analytics.factory = (method) => {
-      return () => {
+    analytics.factory = function (method) {
+      return function () {
         const args = Array.prototype.slice.call(arguments)
         args.unshift(method)
         analytics.push(args)
@@ -55,7 +55,7 @@ module.exports = {
 
     analytics.SNIPPET_VERSION = '4.1.0';
 
-    analytics.load = (key, options) => {
+    analytics.load = function (key, options) {
       const script = document.createElement('script')
       script.type = 'text/javascript'
       script.async = true
@@ -72,7 +72,7 @@ module.exports = {
     }
 
     if (options.router) {
-      options.router.afterEach((to, from) => {
+      options.router.afterEach(function (to, from) {
         analytics.page(options.pageCategory, to.name || '', {
           path: to.fullPath,
           referrer: from.fullPath
