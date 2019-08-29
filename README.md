@@ -70,11 +70,14 @@ See [Load options](https://segment.com/docs/sources/website/analytics.js/#load-o
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/dt/@dansmaculotte/vue-segment.svg?style=flat-square
-[npm-version-href]: https://npmjs.com/package/@dansmaculotte/vue-segment
-[npm-downloads-src]: https://img.shields.io/npm/v/@dansmaculotte/vue-segment/latest.svg?style=flat-square
+[npm-downloads-src]: https://img.shields.io/npm/dt/@dansmaculotte/vue-segment.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@dansmaculotte/vue-segment
+
+[npm-version-src]: https://img.shields.io/npm/v/@dansmaculotte/vue-segment/latest.svg?style=flat-square
+[npm-version-href]: https://npmjs.com/package/@dansmaculotte/vue-segment
+
 [david-dm-src]: https://david-dm.org/dansmaculotte/vue-segment/status.svg?style=flat-square
 [david-dm-href]: https://david-dm.org/dansmaculotte/vue-segment
+
 [standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
 [standard-js-href]: https://standardjs.com
