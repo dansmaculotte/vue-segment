@@ -22,6 +22,7 @@ Vue.use(Segment, {
   writeKey: 'YOUR_SEGMENT_WRITE_KEY',
   disabled: true,
   router,
+  pageCategory: 'shop',
   settings: {
     ...
   }
@@ -51,6 +52,13 @@ Disable automatic script loading, if you need compliance with GDPR.
 Call `analytics.page` method on `afterEach` router method if provided.
 
 - Type: `Object`
+
+### pageCategory
+
+In case you provided router, you can specify the category page of the `page` event. See segment [page](https://segment.com/docs/sources/website/analytics.js/#page) method reference.
+
+- Type: `String`,
+  - Default: `''`
 
 ### settings
 

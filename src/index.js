@@ -73,7 +73,7 @@ module.exports = {
 
     if (options.router) {
       options.router.afterEach(function (to, from) {
-        analytics.page(options.pageCategory, to.name || '', {
+        window.analytics.page(options.pageCategory || '', to.name || '', {
           path: to.fullPath,
           referrer: from.fullPath
         })
