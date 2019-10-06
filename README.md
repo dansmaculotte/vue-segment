@@ -22,6 +22,7 @@ Vue.use(Segment, {
   writeKey: 'YOUR_SEGMENT_WRITE_KEY',
   disabled: true,
   router,
+  pageCategory: 'shop',
   settings: {
     ...
   }
