@@ -48,6 +48,7 @@
     "standard-version": "latest",
     "vue": "latest",
     "vue-loader": "latest",
+    "vue-router": "^3.1.3",
     "vue-template-compiler": "latest",
     "webpack": "latest",
     "webpack-cli": "latest",
