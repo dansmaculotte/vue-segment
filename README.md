@@ -52,6 +52,13 @@ Call `analytics.page` method on `afterEach` router method if provided.
 
 - Type: `Object`
 
+### pageCategory
+
+In case you provided router, you can specify the category page of the `page` event. See segment [page](https://segment.com/docs/sources/website/analytics.js/#page) method reference.
+
+- Type: `String`,
+  - Default: `''`
+
 ### settings
 
 See [Load options](https://segment.com/docs/sources/website/analytics.js/#load-options) reference.
