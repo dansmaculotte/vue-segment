@@ -1,6 +1,6 @@
 module.exports = {
   install: function (Vue, options) {
-    if (!options.writeKey || options.writeKey.length === 0) {
+    if (!options.disabled && (!options.writeKey || options.writeKey.length === 0)) {
       console.warn('Please enter a Segment Write Key')
       return
     }
