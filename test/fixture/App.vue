@@ -16,6 +16,7 @@
     <router-view></router-view>
     <h1>Works !</h1>
     <button @click="load">load segment</button>
+    <button @click="identify">identity me</button>
   </div>
 </template>
 
@@ -24,6 +25,12 @@ export default {
   methods: {
     load() {
       this.$segment.load(SEGMENT_WRITE_KEY)
+    },
+    identify() {
+      this.$segment.identify({
+        name: 'dev',
+        email: 'segment@dansmaculotte.dev'
+      })
     }
   }
 }
