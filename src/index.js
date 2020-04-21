@@ -75,7 +75,6 @@ module.exports = {
       options.router.afterEach(function (to, from) {
         window.analytics.page(options.pageCategory || '', to.name || '', {
           path: to.fullPath,
-          referrer: from.fullPath
         })
       })
     }
