@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/dansmaculotte/vue-segment/compare/v0.2.8...v0.2.9) (2020-04-21)
+
+
+### Bug Fixes
+
+* remove referrer property from router hook ([1eba248](https://github.com/dansmaculotte/vue-segment/commit/1eba248df4f99576a4645ef5f624214179102f43))
+
 ### [0.2.8](https://github.com/dansmaculotte/vue-segment/compare/v0.2.7...v0.2.8) (2019-11-20)
 
 ### [0.2.7](https://github.com/dansmaculotte/vue-segment/compare/v0.2.6...v0.2.7) (2019-10-06)
