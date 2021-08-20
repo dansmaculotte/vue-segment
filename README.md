@@ -1,3 +1,9 @@
+# NOT MAINTAINED ANYMORE!
+
+We don't use segment anymore for our website, I don't have an account on Segment to make this plugin evolve.
+
+Please fill in an issue if you want to be a maintainer or if you want redirect people to you fork.
+
 # vue-segment
 
 [![npm version][npm-version-src]][npm-version-href]
