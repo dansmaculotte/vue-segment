@@ -57,11 +57,11 @@ module.exports = {
 
     analytics.load = function (key, options) {
       const script = document.createElement('script')
-      script.type = 'text/javascript'
+      script.type = 'text/plain'
       script.async = true
       script.src = 'https://cdn.segment.com/analytics.js/v1/'
         + key + '/analytics.min.js'
-      script.class = 'C0002'
+      script.classList.add('C0002')
       script.setAttribute('data-type', 'otms')
 
       const first = document.getElementsByTagName('script')[0]
