@@ -61,6 +61,8 @@ module.exports = {
       script.async = true
       script.src = 'https://cdn.segment.com/analytics.js/v1/'
         + key + '/analytics.min.js'
+      script.class = 'C0002'
+      script.setAttribute('data-type', 'otms')
 
       const first = document.getElementsByTagName('script')[0]
       first.parentNode.insertBefore(script, first)
