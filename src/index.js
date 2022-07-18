@@ -61,7 +61,7 @@ module.exports = {
       script.async = true
       script.src = 'https://cdn.segment.com/analytics.js/v1/'
         + key + '/analytics.min.js'
-      script.classList.add('optanon-category-C0002')
+      script.classList.add('optanon-category-C0003')
       script.setAttribute('data-type', 'otms')
 
       const first = document.getElementsByTagName('script')[0]
