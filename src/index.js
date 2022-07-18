@@ -81,6 +81,8 @@ module.exports = {
       })
     }
 
+    console.log('bb-vue-segment loaded')
+
     Object.defineProperty(Vue, '$segment', {
       get () { return window.analytics }
     })
