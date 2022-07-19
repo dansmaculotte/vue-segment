@@ -11,6 +11,7 @@ module.exports = {
     const analytics = (window.analytics = window.analytics || []);
 
     if (analytics.initialize || analytics.initialized) {
+      console.log("bb-vue-segment initalized");
       return;
     }
 
@@ -83,8 +84,6 @@ module.exports = {
         });
       });
     }
-
-    console.log("bb-vue-segment loaded");
 
     Object.defineProperty(Vue, "$segment", {
       get() {
