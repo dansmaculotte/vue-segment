@@ -58,7 +58,7 @@ module.exports = {
     analytics.load = function (key, options) {
       const script = document.createElement('script')
       script.id = 'otms-segment'
-      script.type = 'text/javascript'
+      script.type = 'text/plain'
       script.async = true
       script.src = 'https://cdn.segment.com/analytics.js/v1/'
         + key + '/analytics.min.js'
