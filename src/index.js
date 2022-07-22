@@ -7,7 +7,7 @@ module.exports = {
 
     const analytics = window.analytics = window.analytics || []
 
-    if (analytics.initialize || document.querySelector('#otms-segment')) {
+    if (analytics.initialize) {
       return
     }
 
@@ -56,6 +56,7 @@ module.exports = {
     analytics.SNIPPET_VERSION = '4.1.0';
 
     analytics.load = function (key, options) {
+      if (document.querySelector('#otms-segment')) return
       const script = document.createElement('script')
       script.id = 'otms-segment'
       script.type = 'text/plain'
