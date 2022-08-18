@@ -1,6 +1,6 @@
 {
   "name": "@boll-and-branch/vue-segment",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Vue.js plugin for Segment Analytics.js",
   "license": "private",
   "main": "src/index.js",
