@@ -61,8 +61,7 @@ module.exports = {
       script.id = 'otms-segment'
       script.type = 'text/plain'
       script.async = true
-      script.src = 'https://cdn.segment.com/analytics.js/v1/'
-        + key + '/analytics.min.js'
+      script.src = 'https://evs.segment.bollandbranch.com/ocirLQ1uav/2k30w3Pn3g.min.js'
       script.classList.add('optanon-category-C0003')
 
       const first = document.getElementsByTagName('script')[0]
